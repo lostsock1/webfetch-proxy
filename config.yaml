@@ -1,0 +1,84 @@
+# SHADOW Webfetch Proxy Configuration
+# Advanced webfetch proxy configuration for opencode operations
+
+proxy:
+  host: "0.0.0.0"  # Bind to all interfaces
+  port: 8082        # Proxy server port
+  workers: 1        # Single worker for easy debugging
+  timeout: 30       # Default request timeout
+  max_concurrent: 100  # Maximum concurrent requests
+  show_requests: true  # Show requests on screen
+
+caching:
+  enabled: true
+  ttl: 3600         # Cache TTL in seconds
+  redis_url: "redis://localhost:6379/0"
+  max_size_mb: 100  # Maximum cache size
+
+security:
+  # API key for authentication (set to null to disable)
+  api_key: null
+  # Allowed domains (empty list = allow all)
+  allowed_domains: []
+  # Blocked domains
+  blocked_domains: 
+    - "localhost"
+    - "127.0.0.1"
+    - "0.0.0.0"
+  rate_limiting:
+    enabled: true
+    requests_per_minute: 60
+    requests_per_hour: 1000
+
+intelligence:
+  enabled: true
+  storage_path: "/Users/djesys/#VIBECODE/intelligence"
+  auto_tagging: true
+  content_analysis: true
+
+user_agents:
+  # Standard Chrome browser user agents for maximum compatibility
+  - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  - "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+  - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15"
+
+logging:
+  level: "INFO"
+  file: "/Users/djesys/#VIBECODE/logs/proxy.log"
+  max_size_mb: 10
+  backup_count: 5
+
+# OSINT-specific settings
+osint:
+  # Common OSINT targets and their configurations
+  default_headers:
+    Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+    Accept-Language: "en-US,en;q=0.5"
+    Accept-Encoding: "gzip, deflate"
+    Connection: "keep-alive"
+    Upgrade-Insecure-Requests: "1"
+  
+  # Reconnaissance patterns
+  recon_patterns:
+    - "nmap"
+    - "port.*scan"
+    - "dirb"
+    - "gobuster"
+    - "nikto"
+    - "sqlmap"
+    - "metasploit"
+    - "wpscan"
+  
+  # Intelligence tags for different types of targets
+  intelligence_tags:
+    - "reconnaissance"
+    - "osint"
+    - "vulnerability"
+    - "directory"
+    - "subdomain"
+    - "social"
+    - "network"
+    - "web"
+    - "database"

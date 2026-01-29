@@ -1,0 +1,29 @@
+{
+  "url": "https://httpbin.org/cookies",
+  "timestamp": "2026-01-26 02:33:12.806982",
+  "content": "{\n  \"cookies\": {}\n}\n",
+  "metadata": {
+    "status_code": 200,
+    "headers": {
+      "Date": "Mon, 26 Jan 2026 05:33:20 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "20",
+      "Connection": "keep-alive",
+      "Server": "gunicorn/19.9.0",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Credentials": "true"
+    },
+    "execution_time": 1.215696096420288,
+    "size": 20,
+    "method": "GET",
+    "tags": [
+      "opencode",
+      "bulk"
+    ]
+  },
+  "hash": "60288cf20892be01c447504e5e7a6da761a0c631e158079d58f3599f7ea215e5",
+  "tags": [
+    "opencode",
+    "bulk"
+  ]
+}

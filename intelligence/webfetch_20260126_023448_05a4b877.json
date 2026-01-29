@@ -1,0 +1,29 @@
+{
+  "url": "https://httpbin.org/user-agent",
+  "timestamp": "2026-01-26 02:34:48.160258",
+  "content": "{\n  \"user-agent\": \"SHADOW-Intelligence/2.0 (Cybersecurity)\"\n}\n",
+  "metadata": {
+    "status_code": 200,
+    "headers": {
+      "Date": "Mon, 26 Jan 2026 05:34:56 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "62",
+      "Connection": "keep-alive",
+      "Server": "gunicorn/19.9.0",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Credentials": "true"
+    },
+    "execution_time": 0.7900140285491943,
+    "size": 62,
+    "method": "GET",
+    "tags": [
+      "opencode",
+      "auto"
+    ]
+  },
+  "hash": "e621e07f7611de3d7ed02eb789f4ef7125f29918c5a959a7eff9ca204c0b8030",
+  "tags": [
+    "opencode",
+    "auto"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "url": "https://httpbin.org/ip",
+  "timestamp": "2026-01-26 02:34:49.456048",
+  "content": "{\n  \"origin\": \"191.250.150.147\"\n}\n",
+  "metadata": {
+    "status_code": 200,
+    "headers": {
+      "Date": "Mon, 26 Jan 2026 05:34:57 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "34",
+      "Connection": "keep-alive",
+      "Server": "gunicorn/19.9.0",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Credentials": "true"
+    },
+    "execution_time": 1.291416883468628,
+    "size": 34,
+    "method": "GET",
+    "tags": [
+      "opencode",
+      "auto"
+    ]
+  },
+  "hash": "a64d7dcebc6982dd56984a5e580cfaf8a3d9f5f4e6dd4ff0c4b07cc4f32590d5",
+  "tags": [
+    "opencode",
+    "auto"
+  ]
+}

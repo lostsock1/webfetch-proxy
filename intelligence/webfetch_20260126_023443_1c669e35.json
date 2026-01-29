@@ -1,0 +1,39 @@
+{
+  "url": "https://api.openai.com/v1/models",
+  "timestamp": "2026-01-26 02:34:43.981031",
+  "content": "{\n  \"error\": {\n    \"message\": \"Missing bearer authentication in header\",\n    \"type\": \"invalid_request_error\",\n    \"param\": null,\n    \"code\": null\n  }\n}",
+  "metadata": {
+    "status_code": 401,
+    "headers": {
+      "Date": "Mon, 26 Jan 2026 05:34:51 GMT",
+      "Content-Type": "application/json",
+      "Content-Length": "151",
+      "Connection": "keep-alive",
+      "WWW-Authenticate": "Bearer realm=\"OpenAI API\"",
+      "openai-version": "2020-10-01",
+      "x-request-id": "31228cc1",
+      "openai-processing-ms": "1",
+      "x-envoy-upstream-service-time": "2",
+      "x-openai-proxy-wasm": "v0.1",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "cf-cache-status": "DYNAMIC",
+      "Set-Cookie": "__cf_bm=t7V67sd3FV_DQFQP2FhrWBOrxErB6lpZo9LLBgUOrmA-1769405691-1.0.1.1-gDOWQqqtFXkG.VwFOoc7ASRXGQJTkEyuK4Xeb385sOr7uD1XGz0l5_gycI6LJmN9er8FuUNZddQ.8RdXbjDtoRh0WiPuf9BzOL9reH3A6nM; path=/; expires=Mon, 26-Jan-26 06:04:51 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None",
+      "X-Content-Type-Options": "nosniff",
+      "Server": "cloudflare",
+      "CF-RAY": "9c3da4c1ab9bc60a-GIG",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    },
+    "execution_time": 1.1830520629882812,
+    "size": 151,
+    "method": "GET",
+    "tags": [
+      "opencode",
+      "auto"
+    ]
+  },
+  "hash": "020cefc21c2f2477bc862fb750a476414029d287454ca6a67d0b1d19d82d219d",
+  "tags": [
+    "opencode",
+    "auto"
+  ]
+}

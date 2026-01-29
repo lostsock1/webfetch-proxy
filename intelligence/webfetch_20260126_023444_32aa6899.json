@@ -1,0 +1,38 @@
+{
+  "url": "https://docs.python.org/3/library/requests.html",
+  "timestamp": "2026-01-26 02:34:44.669884",
+  "content": "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404 Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n",
+  "metadata": {
+    "status_code": 404,
+    "headers": {
+      "Connection": "keep-alive",
+      "Content-Length": "106",
+      "Server": "nginx",
+      "Content-Type": "text/html",
+      "x-clacks-overhead": "GNU Terry Pratchett",
+      "strict-transport-security": "max-age=315360000; includeSubDomains; preload",
+      "Content-Encoding": "gzip",
+      "Via": "1.1 varnish, 1.1 varnish",
+      "Accept-Ranges": "bytes",
+      "Age": "0",
+      "Date": "Mon, 26 Jan 2026 05:34:52 GMT",
+      "X-Served-By": "cache-lga21922-LGA, cache-gig2250021-GIG",
+      "X-Cache": "MISS, MISS",
+      "X-Cache-Hits": "0, 0",
+      "X-Timer": "S1769405693.724289,VS0,VE114",
+      "Vary": "Accept-Encoding"
+    },
+    "execution_time": 0.17521095275878906,
+    "size": 146,
+    "method": "GET",
+    "tags": [
+      "opencode",
+      "auto"
+    ]
+  },
+  "hash": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+  "tags": [
+    "opencode",
+    "auto"
+  ]
+}
