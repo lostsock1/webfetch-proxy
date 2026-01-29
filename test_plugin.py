@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-🔥 VIBECODE WebFetch Proxy Plugin - Test Suite
-Tests the OpenCode plugin functionality
+WebFetch Proxy Plugin - Test Suite
+Tests the proxy functionality
 """
 
 import sys
@@ -10,12 +10,11 @@ import json
 import time
 import requests
 
-# Add VIBECODE proxy to path
-VIBECODE_PROXY_PATH = "/Users/djesys/#VIBECODE/webfetch-prxy"
-if VIBECODE_PROXY_PATH not in sys.path:
-    sys.path.insert(0, VIBECODE_PROXY_PATH)
+# Add current directory to path
+if "." not in sys.path:
+    sys.path.insert(0, ".")
 
-print("🔥 VIBECODE WebFetch Proxy Plugin Test")
+print("🔥 WebFetch Proxy Plugin Test")
 print("=" * 50)
 
 # Test 1: Check if proxy is running
@@ -30,16 +29,7 @@ try:
     else:
         print(f"   ⚠️  Proxy returned status {response.status_code}")
 except requests.exceptions.ConnectionError:
-    print("   ❌ Proxy not running - starting it...")
-    # Start the proxy
-    proxy_script = f"{VIBECODE_PROXY_PATH}/webfetch_proxy.py"
-    import subprocess
-
-    subprocess.Popen(
-        ["python3", proxy_script], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
-    )
-    time.sleep(3)
-    print("   🚀 Proxy starting...")
+    print("   ❌ Proxy not running - start it with: python3 webfetch_proxy.py")
 except Exception as e:
     print(f"   ❌ Error: {e}")
 

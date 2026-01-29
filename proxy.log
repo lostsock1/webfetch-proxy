@@ -1,9 +1,0 @@
-2026-01-26 05:35:03,262 - uvicorn.error - INFO - Started server process [60981]
-2026-01-26 05:35:03,262 - uvicorn.error - INFO - Waiting for application startup.
-2026-01-26 05:35:03,264 - ShadowWebfetchProxy - INFO - SHADOW Webfetch Proxy initialized
-2026-01-26 05:35:03,264 - ShadowWebfetchProxy - INFO - Redis cache initialized
-2026-01-26 05:35:03,264 - ShadowWebfetchProxy - INFO - HTTP session initialized
-2026-01-26 05:35:03,265 - ShadowWebfetchProxy - INFO - SHADOW Webfetch Proxy started
-2026-01-26 05:35:03,265 - uvicorn.error - INFO - Application startup complete.
-2026-01-26 05:35:03,265 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8082 (Press CTRL+C to quit)
-2026-01-26 05:35:27,928 - uvicorn.access - INFO - 127.0.0.1:55745 - "GET /health HTTP/1.1" 200

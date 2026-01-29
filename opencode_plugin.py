@@ -43,9 +43,7 @@ class OpenCodeWebFetchPlugin:
 
     def __init__(self, config_path: str = None):
         """Initialize the OpenCode webfetch proxy plugin"""
-        self.config_path = (
-            config_path or "/Users/djesys/#VIBECODE/webfetch-prxy/config.yaml"
-        )
+        self.config_path = config_path or "./config.yaml"
         self.config = self._load_config()
 
         # Plugin state

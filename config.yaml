@@ -32,7 +32,7 @@ security:
 
 intelligence:
   enabled: true
-  storage_path: "/Users/djesys/#VIBECODE/intelligence"
+  storage_path: "./intelligence"
   auto_tagging: true
   content_analysis: true
 
@@ -46,7 +46,7 @@ user_agents:
 
 logging:
   level: "INFO"
-  file: "/Users/djesys/#VIBECODE/logs/proxy.log"
+  file: "./logs/proxy.log"
   max_size_mb: 10
   backup_count: 5
 
